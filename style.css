@@ -1,0 +1,372 @@
+/**** FONTS ****/
+
+@font-face {
+  font-family: 'Graphik Bold';
+  src: url('/fonts/Graphik-Bold-Web.woff2') format('woff2'),
+       url('/fonts/Graphik-Bold-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Regular';
+  src: url('/fonts/Graphik-Regular-Web.woff2') format('woff2'),
+       url('/fonts/Graphik-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+/**** BODY ****/
+* {
+    margin: 0; 
+}
+body {
+    font-size: 10px; 
+    font-family: 'Graphik Regular';  
+    font-weight:  400;
+    background: #f2f4fb;       
+}
+
+#body-container {
+    padding: 3em; 
+}
+
+/**** TYPO ****/
+p {
+    font-size: 1.6em; 
+    color: #081F33; 
+    line-height: 2em;
+}
+
+h1.site-title {
+    font-family: 'Graphik Bold';
+    font-weight: 700; 
+    font-size: 2em; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    padding-left: 4rem;
+    margin-bottom: 0.5rem; 
+}
+
+h1.site-title:before {
+    height: 50px;
+    width: 50px;  
+    background: url('/images/oval.png') no-repeat;   
+    display: inline-block;   
+    position: absolute;  
+    content: "";  
+    margin-left: -4rem;
+    background-size: contain;
+}
+
+h2 {
+    font-family: 'Graphik Bold';
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 2.25em;
+}
+
+h3 {
+    font-family: 'Graphik Regular';
+    font-weight: normal;
+    font-size: 2.1em;    
+    color: #E6E8EB; 
+    line-height: 1.5em;
+}
+
+strong {
+    font-family: 'Graphik Bold';
+    font-weight: 700; 
+}
+
+span.lucida-grande {
+    font-family: 'Lucida Grande';
+    font-weight: bold; 
+}
+
+/**** SECTIONS - TOP ****/
+#top-header {
+    background: #2d3a4a; 
+    height: 75vh; 
+}
+
+#top-header--content {
+    color: white; 
+    padding-top: 27vh; 
+    width: 93.2em; 
+    margin: auto; 
+    text-align: left; 
+    max-width: 92%;
+}
+
+#top-header--content h2 {
+    line-height: 2.75em;
+} 
+
+/**** SECTIONS - CTA ****/
+.cta { 
+    display: table; 
+    width: 100%; 
+    margin-top: 3em;
+    margin-bottom: 3em; 
+}
+
+.cta h2 {
+    color: #081F33; 
+}
+
+.cta--left {
+    display: table-cell;
+    width: 50%;
+    border-right: 1.5em solid #f2f4fb;
+    vertical-align: middle;
+    text-align: center;
+    position: relative; 
+}
+
+.cta--right {
+    display: table-cell; 
+    width: 50%;   
+    border-left: 1.5em solid #f2f4fb;   
+    vertical-align: middle;
+    text-align: center; 
+    position: relative;         
+}
+
+.cta--left.deep-work .gradient-trick,
+.cta--right.design-accelerator .gradient-trick  {
+    -webkit-transition: all 0.5s; /* Safari prior 6.1 */
+    transition: all 0.5s;  
+    background: white;    
+    display: block;
+    height: 18rem;
+}
+
+.cta--left.deep-work h2 a, 
+.cta--right.design-accelerator h2 a {
+    position: absolute;
+    text-decoration: none;
+    color: #081F33;
+    display: block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);  
+    padding: 3em 0em;   
+    transition: all 0.5s ease-in-out;     
+}
+
+.cta--left.deep-work h2 a:hover, 
+.cta--right.design-accelerator h2 a:hover {
+    color: white; 
+}
+
+.cta--left.deep-work .gradient-trick:before {
+    content: '';
+    position: absolute;
+    margin-left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background: rgba(248,121,144,1);
+    background: -moz-linear-gradient(45deg, rgba(248,121,144,1) 0%, rgba(253,198,126,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(248,121,144,1)), color-stop(100%, rgba(253,198,126,1)));
+    background: -webkit-linear-gradient(45deg, rgba(248,121,144,1) 0%, rgba(253,198,126,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(248,121,144,1) 0%, rgba(253,198,126,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(248,121,144,1) 0%, rgba(253,198,126,1) 100%);
+    background: linear-gradient(45deg, rgba(248,121,144,1) 0%, rgba(253,198,126,1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f87990', endColorstr='#fdc67e', GradientType=1 );
+    width: 100%;
+}
+
+.cta--right.design-accelerator .gradient-trick:before {
+    content: '';
+    position: absolute;
+    margin-left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background: rgba(60,211,173,1);
+    background: -moz-linear-gradient(45deg, rgba(60,211,173,1) 0%, rgba(102,76,196,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(60,211,173,1)), color-stop(100%, rgba(102,76,196,1)));
+    background: -webkit-linear-gradient(45deg, rgba(60,211,173,1) 0%, rgba(102,76,196,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(60,211,173,1) 0%, rgba(102,76,196,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(60,211,173,1) 0%, rgba(102,76,196,1) 100%);
+    background: linear-gradient(45deg, rgba(60,211,173,1) 0%, rgba(102,76,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cd3ad', endColorstr='#664cc4', GradientType=1 ); 
+    width: 100%;
+}
+
+.cta--left.deep-work .gradient-trick:hover:before,
+.cta--right.design-accelerator .gradient-trick:hover:before  {
+    opacity: 1; 
+}
+
+
+
+/**** SECTIONS - TESTIMONIALS ****/
+.testimonials {
+    background: white; 
+    padding-top: 12.5em; 
+    padding-bottom: 12.5em; 
+    width: 100%; 
+    margin-bottom: 3em; 
+}
+
+.testimonials--content {
+    width: 100%; 
+    display: table; 
+    max-width: 93.2em; 
+    margin: auto; 
+    padding-bottom: 5em; 
+}
+
+.testimonials--content:last-child {
+    padding-bottom: 0em;     
+}
+
+.testimonials--content--left {
+    display: table-cell; 
+    width: 12.5%; 
+    margin-right: 5%; 
+    float: left; 
+}
+
+.testimonials--content--right {
+    display: table-cell; 
+    width: 82.5%;  
+    float: left;       
+}
+
+span.testimonials--author {
+    font-family: 'Graphik Bold';   
+    font-weight: 700; 
+    font-size: 1.6em;  
+    line-height: 2em;
+}
+
+
+/**** SECTIONS - CTA CONTACT ****/
+.cta:last-child {
+    margin-bottom: 0em; 
+}
+
+.cta--left.blue-grey {
+    background: #9facc3; 
+    height: 18rem;
+}
+
+.cta--right.light-grey {
+    background: #e4e5ed;   
+    height: 18rem;  
+}
+
+a.contact {
+    text-decoration: none; 
+    font-size: 2.1em; 
+    color: #081F33; 
+}
+
+a#margin-right-clearfix {
+    margin-right: 0.5em; 
+}
+
+
+/******
+** TABLETS AND MOBILES 
+******/
+/* Tablets */
+@media screen and (max-width: 1120px) {
+    /* Typo */
+    body {
+        font-size: 9px; 
+    }
+    h2 {
+        font-size: 3em; 
+    }
+    /* Sections */
+    #top-header--content {
+        max-width: 90%;
+    }
+    .testimonials--content {
+        width: 90%;
+    }
+    .cta--left.deep-work .gradient-trick,
+    .cta--right.design-accelerator .gradient-trick,
+    .cta--left.blue-grey,
+    .cta--right.light-grey {
+        height: 14rem;
+    }
+    .cta--left.deep-work h2 a,
+    .cta--right.design-accelerator h2 a {
+        padding: 2.5em 0em;
+    }
+    .testimonials--content--left {
+        margin-right: 9%;
+    }
+    .testimonials--content--right {
+        width: 78.5%;
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 700px) {
+    #body-container {
+        padding: 2em;
+    }
+    #top-header--content h2 {
+        line-height: 1.5em;
+    }
+    .cta--left.deep-work h2 a,
+    .cta--right.design-accelerator h2 a {
+        padding: 4em 0em;
+        max-height: auto; 
+    }
+    .cta {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .cta--left,
+    .cta--right {
+        width: 100%;
+        border-right: none;
+        display: block; 
+    }
+    .cta--right {
+        border-top: 2em solid #f2f4fb;
+        border-left: none; 
+    }
+    .testimonials {
+        padding-top: 9em;
+        padding-bottom: 9em;
+    }
+    .testimonials--content--left,
+    .testimonials--content--right {
+        display: block; 
+        width: 100%;
+        margin-right: 0%;
+    }
+    .cta--left.blue-grey h2, 
+    .cta--right.light-grey h2 {
+        padding-top: 2.25em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #top-header {
+        height: 85vh;
+    }
+    h1.site-title {
+        font-size: 1.55em;
+        line-height: 3.5em;
+    }
+    #top-header--content {
+        padding-top: 18vh;
+    }
+}

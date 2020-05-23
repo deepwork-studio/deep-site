@@ -1,0 +1,2 @@
+# Redirects from what the browser requests to what we serve
+/            http://206.189.169.240

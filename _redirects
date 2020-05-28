@@ -1,4 +1,4 @@
 # Redirects from what the browser requests to what we serve
-https://deepwork.studio/* http://206.189.169.240:8080:splat 301!
-http://deepwork.studio/* http://206.189.169.240:8080:splat 301!
+# https://deepwork.studio/* http://206.189.169.240:8080:splat 301!
+# http://deepwork.studio/* http://206.189.169.240:8080:splat 301!
 # /            http://206.189.169.240:8080
